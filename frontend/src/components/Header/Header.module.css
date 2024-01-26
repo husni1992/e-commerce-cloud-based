@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #0D1117;
+    color: white;
+}
+
+.branding h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}

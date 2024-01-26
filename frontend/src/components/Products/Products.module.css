@@ -1,0 +1,74 @@
+.productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem;
+}
+
+.productCard {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    /* To keep everything inside the card */
+}
+
+.productImage {
+    display: block;
+    width: 100%;
+    /* Make the image responsive */
+    height: 200px;
+    /* Fixed height for uniformity */
+    object-fit: cover;
+    /* This will handle the resizing of images */
+    margin-bottom: 1rem;
+}
+
+.productName {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    /* Center product name text */
+}
+
+.productDescription {
+    color: #666;
+    font-size: 1rem;
+    padding: 0 1rem;
+    /* Add some padding around the description */
+    margin-bottom: 1rem;
+    text-align: center;
+    /* Center description text */
+}
+
+.productPrice {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    /* Center price text */
+}
+
+.productAddToCart {
+    /* Makes the button extend full width of card */
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 1rem;
+    /* Adds space below the button */
+}
+
+.productAddToCart:hover {
+    background-color: #4cae4c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .productGrid {
+        grid-template-columns: 1fr;
+        /* Stack the products on small screens */
+    }
+}
